@@ -1,4 +1,5 @@
 import React from 'react';
+import Homepagelogo from "../images/homepagelogo.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
@@ -6,7 +7,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-dark">
             <div className="container">
-                <a className="navbar-brand" href="#"> <img className="homepagelogo" src={process.env.PUBLIC_URL + "/images/homepagelogo.png"} alt="Logo...."></img></a>
+                <a className="navbar-brand" href="#"> <img className="homepagelogo" src={Homepagelogo} alt="Logo...."></img></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <FontAwesomeIcon icon={faBars} style={{color: "#fff"}}/>
                 </button>
