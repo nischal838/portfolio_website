@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 
 :root{
   --primary-white: #fff;
-  --primary-orange: #f9ab00;
   --primary-dark: rgba(255, 255, 255,0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --main-heading: #008000;
 }
 
 body {
@@ -86,8 +87,8 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: var(--primary-orange);
-  text-transform: uppercase;
+  color: var(--main-heading);
+  font-family: 'Merriweather', serif;
 }
 
 /***************** Typed Text *************************/
@@ -140,4 +141,19 @@ nav ul li {
   .navbar-brand {
     width: 7rem;
   }
+}
+
+/***************** ABOUT *******************/
+
+.about-wrapper {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+}
+
+.about-wrapper h1{
+  text-align: center;
+  color: var(--main-heading);
+  font-family: 'Merriweather', serif;
 }
